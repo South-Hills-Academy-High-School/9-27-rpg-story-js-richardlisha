@@ -84,7 +84,7 @@ function finalChoice() {
     FinalChoice2 = createScript("Pineapple", "I can make that happen! What's the magic word?", 0)
     blockObject.setAnyProperty(FinalChoice1, AnyProp.NextPage, FinalChoice2)
     blockObject.setStringArrayProperty(FinalChoice2, StrArrayProp.Choices, ["Please!", "BUZZ OFF!!!!"])
-    blockObject.setAnyProperty(FinalChoice2, AnyProp.Choice1, happyEnding())
+    blockObject.setAnyProperty(FinalChoice2, AnyProp.Choice1, superHappyEnding())
     blockObject.setAnyProperty(FinalChoice2, AnyProp.Choice2, sadEnding())
     return FinalChoice1
 }
@@ -97,6 +97,14 @@ function happyEnding() {
     blockObject.setAnyProperty(happy2, AnyProp.NextPage, happy3)
     blockObject.setAnyProperty(happy3, AnyProp.NextPage, happy4)
     return happy1
+}
+let superhappy1: blockObject.BlockObkect = null
+let superhappy2: blockObject.BlockObkect = null
+let superhappy3: blockObject.BlockObkect = null
+function superHappyEnding
+    superhappy1 = creatScript("Pineapple","I'm so sad",2)
+    superhappy2 = creatScript("Mr.Kao","Come back any time!!",3)
+    superhappy3 = creatScript("Pineapple","OKOK!!",3)
 }
 let sadending1:blockObject.BlockObject = null
 let sadending2:blockObject.BlockObject = null
