@@ -105,6 +105,8 @@ function superHappyEnding
     superhappy1 = creatScript("Pineapple","I'm so sad",2)
     superhappy2 = creatScript("Mr.Kao","Come back any time!!",3)
     superhappy3 = creatScript("Pineapple","OKOK!!",3)
+    blockObject.setAnyProperty(happy1, AnyProp.NextPage, happy2)
+    blockObject.setAnyProperty(happy2, AnyProp.NextPage, happy3)
 }
 let sadending1:blockObject.BlockObject = null
 let sadending2:blockObject.BlockObject = null
